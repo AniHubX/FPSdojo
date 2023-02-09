@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -74,43 +74,47 @@ select {
 }
 
 /* floating navbar */
-@media screen and (min-width:700px){
-  .fnav💀{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.fnav💀 {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  background: #212121;
+  border-radius: 30px;
+}
+
+.fnav-icons {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .fnav💀 { 
     width: 350px;
-    height: 50px;
-    padding: 10px;
-    background: #212121;
-    border-radius: 30px;
+ 
   }
 
-  .fnav-icons{
+  .fnav-icons {
     width: 35px;
     height: 35px;
   }
-
 }
 
-
-
-
 /* home */
-.Homemain{
+.Homemain {
   width: 100%;
   height: 100vh;
   background: #121212;
 }
 
-
-
 /* animepage */
-.animepagemain{
+.animepagemain {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -118,35 +122,34 @@ select {
   overflow: hidden;
 }
 
-.backbtn{
-position: absolute;
-width: 50px;
-height: 50px;
-top: 5%;
-left: 5%;
-background: #454552bf;
-border-radius: 15px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 2rem;
-z-index: 2;
-text-decoration: none;
-color: white;
+.backbtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 5%;
+  left: 5%;
+  background: #454552bf;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 2;
+  text-decoration: none;
+  color: white;
 }
 
-.animeposter{
+.animeposter {
   width: 100%;
   height: 70%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.255), rgb(0, 0, 0)), url("https://res.cloudinary.com/dxi9wcchp/image/upload/v1635591822/jujutsu_kaizen_gazruz.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.255), rgb(0, 0, 0)),
+    url("https://res.cloudinary.com/dxi9wcchp/image/upload/v1635591822/jujutsu_kaizen_gazruz.jpg");
   background-position: center top;
   background-size: cover;
   position: fixed;
 }
 
-
-
-.animeabout{
+.animeabout {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -158,153 +161,148 @@ color: white;
   align-items: center;
 }
 
-.animetitle{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 2rem;
-font-weight: 800;
+.animetitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-.animeabout > ul{
-width: 100%;
-display: flex;
-gap: 1rem;
-justify-content: center;
-align-items: center;
-padding: 0;
+.animeabout > ul {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.animeabout > ul > h5{
-background:  var(--glass);
-border-radius: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 5px 10px;
+.animeabout > ul > h5 {
+  background: var(--glass);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
 }
 
-.season-episodes{
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 1rem;
+.season-episodes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
-
 
 /* season */
-.season{
-width: 40%;
-display: flex;
-flex-direction: column;
-align-items: center;
+.season {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.season-toggle{
-display: none;
-}
-
-.season-drp{
-display: flex;
-align-items: center;
-gap: .5rem;
-background: var(--glass);
-padding: .5rem;
-border-radius: 15px;
-cursor: pointer;
+.season-toggle {
+  display: none;
 }
 
-.season-episodesul{
-visibility: hidden;
-display: flex;
-flex-direction: column;
-gap: .5rem;
-padding: 0;
-overflow-y: scroll;
-height: 100px;
-}
-.season-episodesli{
-list-style: none;
+.season-drp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--glass);
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-
+.season-episodesul {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+  overflow-y: scroll;
+  height: 100px;
+}
+.season-episodesli {
+  list-style: none;
+}
 
 /* episode */
 
-.episode{
-width: 40%;
-display: flex;
-flex-direction: column;
-align-items: center;
+.episode {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.episode-toggle{
-display: none;
+.episode-toggle {
+  display: none;
 }
 
-.episode-drp{
-display: flex;
-align-items: center;
-gap: .5rem;
-background: var(--glass);
-padding: .5rem;
-border-radius: 15px;
-cursor: pointer;
+.episode-drp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--glass);
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-.toggle-btn{
-transition: 1s ease-in-out all;
+.toggle-btn {
+  transition: 1s ease-in-out all;
 }
-
 
 /* season dropdown with animation */
-#season-toggle:checked ~ .season-episodesul{
-visibility: visible;
+#season-toggle:checked ~ .season-episodesul {
+  visibility: visible;
 }
 
-#season-toggle:checked ~ .season-drp > .toggle-btn{
-animation: toggle-animation .5s ease 0s 1 normal forwards;
+#season-toggle:checked ~ .season-drp > .toggle-btn {
+  animation: toggle-animation 0.5s ease 0s 1 normal forwards;
 }
 
 @keyframes toggle-animation {
-0% {
-  transform: rotate(0);
-}
+  0% {
+    transform: rotate(0);
+  }
 
-100% {
-  transform: rotate(180deg);
-}
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
 /* episode drpdown and animation */
-#episode-toggle:checked ~ .season-episodesul{
-visibility: visible;
+#episode-toggle:checked ~ .season-episodesul {
+  visibility: visible;
 }
 
-#episode-toggle:checked ~ .episode-drp > .toggle-btn{
-animation: toggle-animation .5s ease 0s 1 normal forwards;
+#episode-toggle:checked ~ .episode-drp > .toggle-btn {
+  animation: toggle-animation 0.5s ease 0s 1 normal forwards;
 }
 
 @keyframes toggle-animation {
-0% {
-  transform: rotate(0);
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
-100% {
-  transform: rotate(180deg);
-}
-}
-
-
-.Downloadbtn{
-width: 300px;
-height: 50px;
-border: none;
-background: #FF002E;
-border-radius: 15px;
-color: white;
-font-size: 1.2rem;
-font-weight: 600;
-cursor: pointer;
+.Downloadbtn {
+  width: 300px;
+  height: 50px;
+  border: none;
+  background: #ff002e;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
 }
