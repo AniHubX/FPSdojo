@@ -10,7 +10,7 @@ import {BiDownArrow } from "react-icons/bi"
 export default function page() {
   return (
     <div className="animepagemain">
-    <Link href="/Home" className="backbtn">
+    <Link href="/" className="backbtn">
         <IoIosArrowBack/>
     </Link>
     <div className="animeposter"></div>
